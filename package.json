@@ -86,11 +86,7 @@
     "tiptap-markdown": "^0.8.10",
     "zod": "^3.25.76"
   },
-  "overrides": {
-    "@zenstackhq/runtime": "2.22.2",
-    "@zenstackhq/sdk": "2.22.2",
-    "@zenstackhq/server": "2.22.2"
-  },
+  
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
