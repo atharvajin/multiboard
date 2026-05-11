@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { headers } from 'next/headers';
 import { auth } from '@/lib/auth';
 import { redirect } from 'next/navigation';
