@@ -16,7 +16,7 @@ export async function requireAdmin() {
   const userPermissions = await auth.api.userHasPermission({
     body: {
       userId: sessionResult.session.userId,
-      permissions: adminAc.statements
+      permissions: adminAc.statements as any
     },
   });
 
@@ -40,7 +40,7 @@ export async function checkIsAdmin() {
   const userPermissions = await auth.api.userHasPermission({
     body: {
       userId: sessionResult.session.userId,
-      permissions: adminAc.statements
+      permissions: adminAc.statements as any
     },
   });
 
