@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { prisma } from '@/lib/prisma';
 import { auth } from '@/lib/auth';
 import { enhance } from '@zenstackhq/runtime';
@@ -36,7 +38,7 @@ export async function getZenstackPrisma() {
     const hasAdminPermission = await auth.api.userHasPermission({
         body: {
             userId: session.userId,
-            permissions: adminAc.statements
+            permissions: adminAc.statements as any
         },
     });
 
